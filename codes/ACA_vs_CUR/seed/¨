@@ -1,16 +1,6 @@
 #This script considers the interaction between two PEC spheres, and compares several compression techniques
 
 
-#En este compress_single_block_sphere.jlk vamos a aestudiar los timepos de compresion de un sólo bloque de interacción entre dos esferas. Está basado en compress_main_julia_getZ_almond.jl 
-
-#En este compress_main_julia_getZ_almond.jl, copiado de main_julia_getZ.jl, vamos a hacer la misma prueba en Julia del algoritmo de compresión, pero con los datos de la almendra
-
-#En este main_julia_getZ, copaido de main_julia_2.jl en la carpoeta más intern, vamos a tratar de generar la misma matriz para matlab y julia
-#
-#
-
-#Lo mio de Julia
-
 using LinearAlgebra
 #using Plots
 using JLD
