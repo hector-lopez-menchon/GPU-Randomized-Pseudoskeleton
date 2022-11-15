@@ -1,0 +1,32 @@
+=====================================================================
+ SLURM_JOB_ID        = 1572490
+ SLURM_NODE          = cslc01
+ SLURM_JOB_PARTITION = csl
+=====================================================================
+tag1
+tag5
+tag6
+blocks_x: 7680
+blocks_y: 7680
+Time in cuda function = 249580.328125. Time in cuda part 2 = 5628.804199. Julia cc time cuda: 262.476529666
+Time summation
+typeof(Ztotal): Matrix{ComplexF64}
+size(Ztotal): (7680, 7680)
+Time tardado: 249580.328125
+tag7
+about to cuda compress
+about to cpu compress
+Entering loop
+err_app (before compression): Inf
+err_app (after comrpession): 2.2003455183867286
+Entering loop
+err_app (before compression): 2.2003455183867286
+err_app (after comrpession): 4.216079098940395
+Entering loop
+err_app (before compression): 4.216079098940395
+=====================================================================
+1572490.0 |    TIME   |   CPUs   |   MEM   |   GPUs  | GPU MEM |
+----------|-----------|----------|---------|---------|---------|
+REQUESTED |   0h50m   |   1.00   |  0.50G  |    1    |    0    |
+USED      |   0h55m   |   0.55   |  0.48G  | unknown | unknown |
+=====================================================================

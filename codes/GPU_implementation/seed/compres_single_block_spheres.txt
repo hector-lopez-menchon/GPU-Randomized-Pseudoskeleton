@@ -1,0 +1,53 @@
+=====================================================================
+ SLURM_JOB_ID        = 1572938
+ SLURM_NODE          = cslc01
+ SLURM_JOB_PARTITION = csl
+=====================================================================
+tag1
+tag5
+tag6
+blocks_x: 3072
+blocks_y: 3072
+Time in cuda function = 1326.779663. Time in cuda part 2 = 28.735071. Julia cc time cuda: 3.143636524
+Time summation
+typeof(Ztotal): Matrix{ComplexF64}
+size(Ztotal): (3072, 3072)
+Time tardado: 1326.7796630859375
+direct compression
+Entering loop
+err before comp:Inf
+err after comp:2.258102650226846e-8
+error direct: 3.647401525931616e-8
+size(Cdirect): (3072, 614)
+tag7
+about to cuda compress
+norm_Avtest_diff (in cuda_complete_compression): 55.60864063501193
+norm_Avtest_new (in cuda_complete_compression): 8.88000727432838
+err_here (in cuda_complete_compression): 6.26222917584466
+CUDATIME: allocating memory: 2.721824
+CUDATIME: doing computations: 311.140472
+err_here (inside pure_cuda_compression2): 6.262229175844656
+Entering loop
+Current size: 614
+err_app before compression: Inf
+norm_Avtest_diff (in cuda_complete_compression): 0.00000038747076
+norm_Avtest_new (in cuda_complete_compression): 8.88000727054452
+err_here (in cuda_complete_compression): 0.00000004363406
+CUDATIME: allocating memory: 2.552128
+CUDATIME: doing computations: 223.596451
+err_here (inside pure_cuda_compression2): 4.363405936892688e-8
+err_app after compression: 4.363405936892688e-8
+about to cpu compress
+Entering loop
+err_app (before compression): Inf
+err_app (after comrpession): 5.087706187123823e-8
+about to compute errors
+error GPU: 3.8336460029511436e-8
+error CPU: 3.611046865608513e-8
+time GPU (ms): 540.0108795166016
+time CPU (s): 13.992966713
+size(Cs_gpu): (3072, 614)
+size(Cs_cpu): (3072, 614)
+=====================================================================
+JobID 1572938: Could not read info.
+=====================================================================
